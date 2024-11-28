@@ -1,0 +1,77 @@
+Task 1 kyc
+1.	Imbalance Dataset
+  a.	Oversampling (Preferred)
+  b.	Under sampling
+  c.	https://imbalanced-learn.org/stable/user_guide.html
+
+2.	Evaluation Method
+  a.	AUC-Confusion Matrix
+
+3.	Feature Engineering
+  a.	One-hot encoding
+    i.	Too many classes, cost a long time to compute.
+  b.	Label encoding
+  c.	Customer ID (remove or convert?)
+  d.	Merge Table (emt , cash, trsa,kyc) , on CUSTid
+  e.	Security
+        i.	Wire
+          1.	Receive/Send -Cross Country/Within Country (4 Columns)
+          2.	Transaction Count – Cross Country/Within Country
+        ii.	Emt
+          1.	Recieve/Send (2 Columns)
+          2.	Sum/avg/std/count/max/min
+          3.	Transaction Count
+        iii.	Cash (Off Record)	
+          1.	Withdraw/Deposit (2 Columns)
+          2.	Transaction Count
+
+4.   Model Selection
+  a. Logistic Reg
+  b. Decision Tree
+  c. Random Forest
+  d. SVM
+  e. KNN (Drop)
+  
+---------------------------------------------------------------------------------------------------------------------------
+2/21/2024
+
+Task1 (**2/22/2024 Check**)
+1. Build model (Logistic Regression, ANN, Random Forest) -- Tony
+2. Add statiscal results (Max, Min ......) -- Ethan
+
+Task2 (**2/23/2024 Check**)
+1. Determine threshold where is the total amount of the lowest risk individual -- Fabe
+2. Occupation selection (GPT or self-identify) -- Fabe
+3. Determine transactions on risk ppl -- Fabe
+4. Try to find a general connection network ( Focus on identifying middle-man ex #62) -- Tony
+5. Determine wild-life traffic network -- Team
+
+PPT Outline -- Benny & Michelle 
+1. Front-page
+2. Introduction to all tasks
+3. task1
+      -Identify problem
+      -data process
+      -model select ( best model)
+      -Result present
+4.task2
+      -Advance data filter
+      -Determine general connection network
+      -find wild-life traffic network (**explanation)
+      -Result
+5.task3
+      -Web Crawling (1513-Python Code) -- Ethan
+6. Recommendations and concerns
+7.
+------------------------------------------------------------------------------------------------------------------------------
+2/22/2024
+
+Brainstorming on Task3
+
+1. Use Neo4j
+2. Find the total amount and transaction frequency
+3.-Trander: Going out a Big amount
+  -Money Mule: Big money intake, small amount out
+  -Coordinator: Small money intake, big amount out
+  -Courier: Big money intake
+4. trader(large) -> mule -> coordinator()->courier
