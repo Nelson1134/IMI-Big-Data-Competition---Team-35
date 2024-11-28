@@ -1,6 +1,4 @@
 # IMI-Big-Data-Competition---Team-35
-
-# IMI_Competition_Team35
 IMI Big Data and Artificial Intelligence Competition
 
 # Task 1 (Supervised learning)
